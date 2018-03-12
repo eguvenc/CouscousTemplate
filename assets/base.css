@@ -107,7 +107,7 @@ hr { border: none; outline: none; height: 3px; background: #e7e9ec; }
 .align-j { text-align: justify; }
 
 /* Lists */
-ul, ol { padding: 0; padding-left: 0.5em; }
+ul, ol { padding: 0; padding-left: 1em; }
 ul ul, ul ol, ol ul, ol ol { margin: 0; } /* Nested lists */
 ul { list-style: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2 4' width='6' height='8'><circle cx='1' cy='1' r='1' fill='#181818'/></svg>"); } /* A bit of a smaller bullet */
 ol { list-style: decimal; }
