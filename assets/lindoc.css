@@ -90,7 +90,7 @@ p a img {
 /* Table Of Contents */
 main { position: relative; }
 .toc { font-size: 16px; color: #595959; }
-.toc ul a {  color: #444; text-decoration: none; }
+.toc ul a {  text-decoration: none; }
 .toc ul a:hover { color: #444; text-decoration: underline; }
 .toc ul { list-style: none; }
 .toc li { position: relative; }
