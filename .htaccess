@@ -1,0 +1,22 @@
+
+# Disable directory indexing
+
+Options -Indexes
+Options +FollowSymLinks
+Options -MultiViews
+
+RewriteEngine on
+RewriteBase /
+
+# Disables all access to files and directories, sends all request to index.html
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+DirectoryIndex index.html
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
